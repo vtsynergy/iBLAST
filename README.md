@@ -37,7 +37,7 @@ Assume, she performs BLAST search at 3 different times.
 
 
 Note, |D0| < |D1| < |D2|.
-![Show](examples/usecase1.png | width=10)
+![Show](examples/usecase1.jpg | width=10)
 
 At time 0, she will perform BLAST search using following iBLAST command:
 ```
@@ -74,10 +74,10 @@ and combine the result to see if we have gathered enough homologs compared to th
 together.
 
 
-![Show](docs/taxonblast.png | width=10)
+![Show](docs/taxonblast.jpg | width=10)
 
 ## How does iBLAST work in the background?
-![Show](docs/AdaBLAST-sw-stack.png | width=10)
+![Show](docs/AdaBLAST-sw-stack.jpg | width=10)
 
 
 ## Additional Utilities
