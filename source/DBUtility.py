@@ -1,3 +1,4 @@
+import shlex
 import subprocess
 import pickle
 import sqlite3
@@ -140,7 +141,8 @@ def get_latest_dbinstance(query, database):
     return None, None, None
 
 def execute_generic_command(command):
-    command_tokens = command.split()
+    # split the command, but keep items in quotes together
+    command_tokens = shlex.split(command)
     result = subprocess.run(command_tokens, stdout=subprocess.PIPE)
     print(result.stdout.decode('utf-8'))
     return result.stdout.decode('utf-8')
